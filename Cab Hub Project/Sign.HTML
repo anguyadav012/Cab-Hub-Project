@@ -1,0 +1,96 @@
+
+<!Doctype html>
+<html lang="en">
+    <head>
+      <title>
+        Sign Up
+      </title>
+    </head>
+      <style>
+        body {
+          background-color: rgb(48, 7, 86);
+          font-family: 'Roboto',sans-serif;
+        }
+        .SignUp-box{
+          width: 360px;
+          height: 620px;
+          margin: auto;
+          background-color: white;
+          border-radius: 3px;
+        }
+        h1{
+          text-align: center;
+          padding-top: 15px;
+        }
+        h4{
+          text-align: center;
+        }
+        form{
+          width: 300px;
+          margin-left: 20px;
+        }
+        form label{
+          display: flex;
+          margin-top: 20px;
+          font-size: 18px;
+        }
+        form input{
+          width: 100%;
+          padding: 7px;
+          border: none;
+          border: 1px solid gray;
+          border-radius: 6px;
+          outline: none;
+        }
+        input[type="button"]{
+          width: 320px;
+          height: 35px;
+          margin-top: 20px;
+          border: none;
+          background-color: aqua;
+          color: black;
+          font-size: 18px;
+        }
+        p{
+          text-align: center;
+          padding-top: 20px;
+          font-size: 15px;
+        }
+        .para-2{
+          text-align: center;
+          color: white;
+          font-size: 15px;
+          margin-top: -10px;
+        }
+        .para-2 a{
+          color: aqua;
+        }
+      </style>
+    <body>
+      <div class="SignUp-box">
+          <h1>Sign Up</h1>
+          <h4>Please fill this form to create an account</h4>
+          <form action="connect.php" method="post">
+          <label>Name</label>
+          <input type="text" placeholder="Name" name="Name"/>
+          <label>Email</label>
+          <input type="email" placeholder="Email" name="Email" />
+          <label>Mobile number</label>
+          <input type="Mobile number" placeholder="Mobile number" name="Mobile number" />
+          <label>Password</label>
+          <input type="password" placeholder="Password"  name="password"/>
+          <label>Confirmpassword</label>
+          <input type="Confirmpassword" placeholder="Confirmpassword" name="Confirmpassword" />
+         <a href="Login.HTML"><input type="button" value="Submit" onclick="return validate()"></button></a>
+          </form> 
+          <p>By clicking the Sign Up button, you agree to our<br>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+          </p>
+        </div>
+  
+          <p class="para-2">Already have account? <a href="Login.HTML">Login here</a></p>
+
+    </body>
+  </html>
+ 
+

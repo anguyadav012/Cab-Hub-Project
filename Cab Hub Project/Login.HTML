@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Login
+        </title>
+        <style>
+          body{
+            background-color: rgb(48, 7, 86);
+          font-family: 'Roboto',sans-serif;
+        }
+        .login-box{
+            width: 360px;
+            height: 350px;
+            margin: auto;
+            background-color: white;
+            border-radius: 3px;
+          }
+          h1{
+            text-align: center;
+            padding-top: 15px;
+          }
+          h4{
+            text-align: center;
+          }
+          form{
+            width: 300px;
+            margin-left: 20px;
+          }
+          form label{
+            display: flex;
+            margin-top: 18px;
+            font-size: 18px;
+          }
+          form input{
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+          }
+          input[type="button"]{
+            width: 310px;
+            height: 34px;
+            margin-top: 20px;
+            border: none;
+            background-color: aqua;
+            color: black;
+            font-size: 18px;
+          }
+          p{
+            text-align: center;
+            padding-top: 18px;
+            font-size: 15px;
+          }
+          .para-2{
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            margin-top: -15px;
+          }
+          .para-2 a{
+            color: blue;
+          }
+
+ 
+
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <h1>Login</h1>
+            <form>
+            <label>
+                Email address or Mobile number
+            </label>
+            <input type="text" placeholder="Username" name="Name" type="text" id="uname"/>
+            <span id="s1" style="color:red; font: size 20px;"></span>
+            <br />
+            <label>
+                password
+            </label>
+            <input type="text" placeholder="password" name="password" type="password" id="pwd">
+            <span id="s2" style="color:red; font: size 20px;"></span>
+            <br />            
+           <a href="index.HTML"><input type="button" value="Submit" onclick="return validate()"></button></a>
+            </label>
+            <div class="container" style="background-color:white">
+                <span class="pwd"><a href="Forgotpwd.HTML">Forgot password</a></span>
+              </form>
+              </div>
+              <p class="para-2">Not have an account? <a href="Sign.HTML">sing in</a></p>
+        <script type="text/javascript">
+          function validate(){
+            var uname, pwd,s1,s2,z;
+           uname= document.getElementById("uname");
+           pwd= document.getElementById("pwd");
+
+           s1= document.getElementById("s1");
+           s2= document.getElementById("s2");
+           if (uname.value==""){
+            s1.innerHTML="*must be fill";
+           }
+           else{
+            s1.innerHTML="";
+           }
+           if (pwd.value==""){
+            s2.innerHTML="*must be fill";
+           }
+           else{
+            s2.innerHTML="";
+           }
+           if((uname.value=="") || (pwd.value=="")) {
+            z=false;
+           }
+           else{
+            z=true;
+           }
+           return z;
+
+          
+          } 
+        </script>
+    </body>
+</html>
